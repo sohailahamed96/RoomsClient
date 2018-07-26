@@ -49,6 +49,7 @@ class LoginForm extends Component {
       </form>
 </div>*/
 <form >
+  <fieldset >
     <label for="fname" class="label1" >EMAIL ID</label>
     <br/>
     <input type="text" id="email" name="email" placeholder="Your email.."/>
@@ -57,6 +58,7 @@ class LoginForm extends Component {
     <br/>
   
     <input type="text" id="password" type="password" name="password" placeholder="Your password.."/>
+    </fieldset>
     </form>
     );
   }

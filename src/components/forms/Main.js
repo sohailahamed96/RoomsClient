@@ -8,6 +8,8 @@ import {Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import Form from './Form';
 import LoginForm from './LoginForm';
+import AllUser from './AllUser';
+
 const Homepage = () =>{
     return (
         <div className="title">
@@ -36,11 +38,14 @@ const Signup = () => {
 }
 const Login =() =>{
     return (
+        
 <div>
+            
              <Title2 tasks={"Log in "}/>
              <br/>
-             <LoginForm/>
+             
              <p  >
+           <AllUser/>
         <Link to ="/Homepage"><button class="button">Back</button></Link>
         </p>
         </div>

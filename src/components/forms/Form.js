@@ -30,7 +30,7 @@ export default class Form extends React.Component {
         console.log(res);
         console.log(res.data);
         this.setState({
-          Name: "",
+          name: "",
           id: "",
           gender:"",
           em: "",
@@ -52,7 +52,9 @@ export default class Form extends React.Component {
 
   render() {
     return (
-      <form align ="center">
+      <form align ="center" >
+      <fieldset class="fieldborder">
+        
         <input
           name="name"
           placeholder="Username"
@@ -60,7 +62,7 @@ export default class Form extends React.Component {
           onChange={e => this.change(e)}
         />
         <br />
-        <br />
+        
         <input
           name="id"
           placeholder="Employee id"
@@ -68,7 +70,7 @@ export default class Form extends React.Component {
           onChange={e => this.change(e)}
         />
         <br />
-        <br/>
+        
         <input
           name="gender"
           placeholder="Gender"
@@ -76,7 +78,7 @@ export default class Form extends React.Component {
           onChange={e => this.change(e)}
         />
         <br />
-        <br/>
+        
         <input
           name="em"
           placeholder="Email"
@@ -84,7 +86,7 @@ export default class Form extends React.Component {
           onChange={e => this.change(e)}
         />
         <br />
-        <br/>
+        
         <input
           name="pass"
           type="password"
@@ -95,8 +97,9 @@ export default class Form extends React.Component {
           onChange={e => this.change(e)}
         />
         <br />
-        <br/>
+      
         <button   class ="button" onClick={e => this.onSubmit(e)}>Submit</button>
+      </fieldset>
       </form>
     );
   }

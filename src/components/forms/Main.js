@@ -45,7 +45,8 @@ const Login =() =>{
              <br/>
              
              <p  >
-           <AllUser/>
+           <LoginForm/>
+           <br/>
         <Link to ="/Homepage"><button class="button">Back</button></Link>
         </p>
         </div>

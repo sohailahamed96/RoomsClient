@@ -20,13 +20,12 @@ export default class AllUser extends React.Component {
   render() {
     return (
      <div>
-          <table>
+          <table id="people_info">
         { this.state.persons.map(person =>
-        
-            
-                <tr>
+            <tr>
             <td>{person.id}</td>
             <td>{person.name}</td>
+            <td>{person.em}</td>
             </tr>
            
             )

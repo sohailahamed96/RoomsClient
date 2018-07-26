@@ -48,8 +48,8 @@ class LoginForm extends Component {
       <button   class ="button" onClick={e => this.onSubmit(e)}>LOG IN</button>
       </form>
 </div>*/
-<form >
-  <fieldset >
+<form   align="center">
+  <fieldset class="fieldborder">
     <label for="fname" class="label1" >EMAIL ID</label>
     <br/>
     <input type="text" id="email" name="email" placeholder="Your email.."/>
@@ -58,6 +58,8 @@ class LoginForm extends Component {
     <br/>
   
     <input type="text" id="password" type="password" name="password" placeholder="Your password.."/>
+    <br/>
+    <button   class ="button" >Enter:)</button>
     </fieldset>
     </form>
     );

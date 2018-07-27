@@ -54,6 +54,7 @@ export default class Form extends React.Component {
     return (
       <form align ="center" >
       <fieldset class="fieldborder">
+       <br/>
         
         <input
           name="name"

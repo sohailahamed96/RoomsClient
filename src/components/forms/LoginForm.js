@@ -26,41 +26,23 @@ class LoginForm extends Component {
 
   render() {
     return (
-/*      <div >
-      
-      
-
-      <form align ="center">
-      <input
-        name="userName"
-        placeholder="Username"
-        value={this.state.userName}
-        onChange={e => this.change(e)}
-      />
-      <br />
-      <input
-        name="employeeid"
-        placeholder="Employee id"
-        value={this.state.employeeid}
-        onChange={e => this.change(e)}
-      />
-      <br />
-      <button   class ="button" onClick={e => this.onSubmit(e)}>LOG IN</button>
-      </form>
-</div>*/
-<form   align="center">
-  <fieldset class="fieldborder">
+<form align="center" class="fieldborder">
+  <div>
     <label for="fname" class="label1" >EMAIL ID</label>
     <br/>
     <input type="text" id="email" name="email" placeholder="Your email.."/>
+      <br/>
       <br/>
     <label class="label1" for="lname">PASSWORD </label>
     <br/>
   
     <input type="text" id="password" type="password" name="password" placeholder="Your password.."/>
     <br/>
-    <button   class ="button" >Enter:)</button>
-    </fieldset>
+    <br/>
+    </div>
+  
+  
+
     </form>
     );
   }
